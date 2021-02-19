@@ -7,8 +7,10 @@ yarn install
 ```
 
 ## Create Config
+> Create Google Apps Config & General Settings Config
 ```
 touch /src/config/google.ts
+cp /src/config/sample.ts /src/config/index.ts
 ```
 ```javascript
 export const Google = {
@@ -19,7 +21,6 @@ export const Google = {
   calendarId: CALENDAR ID,
 };
 ```
-
 Settings are located at /src/config/
 
 ```javascript
