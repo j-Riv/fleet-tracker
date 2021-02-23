@@ -1,5 +1,5 @@
 # FLEET TRACKER
-> An app to track your companies vehicles or your own. Powered by Vue.js
+> Track your companies vehicles, or your own. Powered by Vue.js
 
 Create maintenance and repair events / records, and automatically add and share them to your Google Calendar. Save and associate files and images to vehicles or records.
 
