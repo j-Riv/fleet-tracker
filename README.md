@@ -5,7 +5,7 @@ Create maintenance and repair events / records, and automatically add and share 
 
 
 ## Project setup
-Depends on the server, which can be found [here](https://github.com/j-Riv/fleet-tracker-server).
+
 ```
 yarn install
 ```
