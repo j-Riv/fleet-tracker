@@ -3,7 +3,9 @@
 
 Create maintenance and repair events / records, and automatically add and share them to your Google Calendar. Save and associate files and images to vehicles or records.
 
+
 ## Project setup
+Depends on the server, which can be found [here](https://github.com/j-Riv/fleet-tracker-server).
 ```
 yarn install
 ```
