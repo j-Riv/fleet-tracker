@@ -121,7 +121,10 @@ const actions = {
       sendToLogin(rootState);
     }
   },
-  async updateDefaultImage({ commit, rootState }: { commit: Commit; rootState: RootState }, data: any) {
+  async updateDefaultImage(
+    { commit, rootState }: { commit: Commit; rootState: RootState },
+    data: { id: string; formData: unknown }
+  ) {
     const token = rootState.auth.authenticated;
     const config = {
       headers: {
@@ -139,7 +142,10 @@ const actions = {
       sendToLogin(rootState);
     }
   },
-  async updatePinkSlip({ commit, rootState }: { commit: Commit; rootState: RootState }, data: any) {
+  async updatePinkSlip(
+    { commit, rootState }: { commit: Commit; rootState: RootState },
+    data: { id: string; formData: unknown }
+  ) {
     const token = rootState.auth.authenticated;
     const config = {
       headers: {
