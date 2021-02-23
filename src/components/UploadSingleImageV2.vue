@@ -40,6 +40,8 @@ export default Vue.extend({
             });
           }
         });
+      } else {
+        alert('Please add file.');
       }
     },
     onFileChange(file) {

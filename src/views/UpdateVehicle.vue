@@ -15,7 +15,7 @@
       </v-col>
       <v-col cols="12" lg="4" md="4">
         <h2>Update Default Image</h2>
-        <UploadSingleImage :vehicle="currentVehicle" />
+        <UploadSingleImageV2 :vehicle="currentVehicle" formTitle="Default Image" actionType="updateDefaultImage" />
       </v-col>
       <v-col cols="12" lg="4" md="4">
         <h2>Add Images</h2>
@@ -38,7 +38,6 @@ import { Crumbs } from '../types/crumbs';
 import UpdateVehicleForm from '@/components/UpdateVehicleForm.vue';
 import UploadImages from '@/components/UploadImages.vue';
 import Breadcrumbs from '@/components/Breadcrumbs.vue';
-import UploadSingleImage from '@/components/UploadSingleImage.vue';
 import UploadSingleImageV2 from '@/components/UploadSingleImageV2.vue';
 
 export default Vue.extend({
@@ -81,7 +80,6 @@ export default Vue.extend({
     UpdateVehicleForm,
     UploadImages,
     Breadcrumbs,
-    UploadSingleImage,
     UploadSingleImageV2,
   },
 });

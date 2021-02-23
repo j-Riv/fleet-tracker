@@ -25,6 +25,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { baseImageUrl } from '../config';
 
 export default Vue.extend({
   name: 'FileList',
@@ -38,8 +39,8 @@ export default Vue.extend({
     },
   },
   methods: {
-    openFile(url) {
-      const file_url = 'https://fleet.suavecito.com/public/uploads/vehicles/records/' + url;
+    openFile(url: string) {
+      const file_url = `${baseImageUrl}/records/${url}`;
       window.open(file_url, '_blank');
     },
   },

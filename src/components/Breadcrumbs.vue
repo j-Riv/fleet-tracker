@@ -21,6 +21,7 @@ export default Vue.extend({
 <style lang="scss">
 .breadcrumb {
   padding-left: 0 !important;
+  text-transform: uppercase;
   li {
     -webkit-box-align: center;
     -ms-flex-align: center;

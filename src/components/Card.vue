@@ -15,7 +15,7 @@
     ></v-img>
 
     <v-card-title>
-      <div>{{ vehicle.name }}</div>
+      <div>{{ vehicle.name.length > 35 ? `${vehicle.name.substring(0, 35)}...` : vehicle.name }}</div>
       <span class="grey--text subtitle-1">{{ vehicle.type }}</span>
     </v-card-title>
     <v-card-actions>
@@ -104,6 +104,7 @@ import Vue from 'vue';
 import { mapGetters, mapActions } from 'vuex';
 import router from '../router';
 import { baseImageUrl } from '../config';
+import { Vehicle } from '../types/vehicle';
 
 export default Vue.extend({
   name: 'Card',
@@ -125,7 +126,7 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions(['getVehicle', 'updateVehicle']),
-    setVehicle(vehicle) {
+    setVehicle(vehicle: Vehicle) {
       this.loading = true;
       this.$store.dispatch('getVehicle', vehicle.id).then(loaded => {
         if (loaded) {

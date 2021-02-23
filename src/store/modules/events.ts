@@ -73,6 +73,7 @@ const actions = {
     };
     try {
       const response = await axios.get(hostname + '/api/vehicles/events/' + data.type + '/id/' + data.id, config);
+
       commit('setRecord', response.data.record);
       return true;
     } catch (e) {
@@ -149,7 +150,7 @@ const actions = {
         config
       );
       if (response.status === 201) {
-        commit('setAddVehicleMsg', 'Images Added');
+        commit('setAddVehicleMsg', 'Images / Files Added');
       }
       return response;
     } catch (e) {
