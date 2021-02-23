@@ -22,17 +22,7 @@
       <v-container>
         <v-row>
           <v-col cols="12">
-            <v-btn
-              block
-              :loading="loadingBtn"
-              :disabled="loadingBtn"
-              @click="
-                () => {
-                  loader = 'loadingBtn';
-                  setVehicle(vehicle);
-                }
-              "
-            >
+            <v-btn block :loading="loadingBtn" :disabled="loadingBtn">
               View
               <template v-slot:loader>
                 <span>Loading...</span>
