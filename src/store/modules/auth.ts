@@ -3,7 +3,7 @@ import { Commit } from 'vuex';
 import axios from 'axios';
 import router from '../../router';
 import hostname from './config';
-import { RootState, AuthState } from '../../types/RootState';
+import { RootState, AuthState } from '../../types/rootState';
 
 // default state
 const state: AuthState = {

@@ -2,7 +2,7 @@
 import { Commit, Dispatch } from 'vuex';
 import axios from 'axios';
 import hostname from './config';
-import { RootState, UserState } from '../../types/RootState';
+import { RootState, UserState } from '../../types/rootState';
 import { User } from '../../types/users';
 
 // default state

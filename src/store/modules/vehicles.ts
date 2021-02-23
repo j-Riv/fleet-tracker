@@ -3,7 +3,7 @@ import { Commit } from 'vuex';
 import axios from 'axios';
 import router from '../../router';
 import hostname from './config';
-import { RootState, VehiclesState } from '../../types/RootState';
+import { RootState, VehiclesState } from '../../types/rootState';
 import { Vehicle } from '../../types/vehicle';
 import { Images } from '../../types/records';
 
