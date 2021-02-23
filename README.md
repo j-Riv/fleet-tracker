@@ -1,5 +1,7 @@
 # FLEET TRACKER
-> Powered by Vue
+> An app to track your companies vehicles or your own. Powered by Vue.js
+
+Create maintenance and repair events / records and automatically add and share them to your Google Calendar. Save and associate files and images to vehicles.
 
 ## Project setup
 ```
@@ -7,7 +9,7 @@ yarn install
 ```
 
 ## Create Config
-> Create Google Apps Config & General Settings Config
+Create Google Apps Config & General Settings Config
 ```
 touch /src/config/google.ts
 cp /src/config/sample.ts /src/config/index.ts
@@ -31,6 +33,7 @@ export const vehicleTracker = {
 
 export const baseImageUrl = 'http://localhost:3000/public/uploads/vehicles';
 
+// used for form elements
 export const settings = {
   vehicle: {
     colors: [
@@ -64,7 +67,7 @@ export const settings = {
       note: 'Notes',
     },
     uses: [{ text: 'Service' }, { text: 'Retail' }, { text: 'Commercial' }, { text: 'Pleasure' }],
-    addresses: ['123 Fake St']
+    addresses: ['123 Fake St, Some Town, CA, 90001']
   }
 }
 ```
@@ -78,3 +81,6 @@ yarn run serve
 ```
 yarn run build
 ```
+![Login](./screenshots/fleet-tracker-login.jpg)
+![All Vehicles](./screenshots/fleet-tracker-all-vehicles.jpg)
+![Single Vehicle](./screenshots/fleet-tracker-single-vehicle.jpg)
